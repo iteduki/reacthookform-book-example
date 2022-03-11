@@ -21,7 +21,7 @@
   "dependencies": {
     "@hookform/error-message": "^2.0.0",
     "@hookform/resolvers": "^2.8.8",
-    "next": "12.0.7",
+    "next": "12.1.0",
     "nprogress": "0.2.0",
     "react": "17.0.2",
     "react-dom": "17.0.2",
