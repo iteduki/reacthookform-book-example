@@ -5,17 +5,17 @@ import { useFormContext } from 'react-hook-form'
 import { FormProvider, useForm } from 'react-hook-form'
 import type * as Yup from 'yup'
 
-interface RequestFormProps<T> {
+interface FormProps<T> {
   schema: Yup.AnyObjectSchema
   defaultValues?: DefaultValues<T>
   children?: React.ReactNode
 }
 
-export const RequestForm = <T extends FieldValues = never>({
+export const Form = <T extends FieldValues = never>({
   schema,
   children,
   defaultValues,
-}: RequestFormProps<T>): ReturnType<React.FC> => {
+}: FormProps<T>): ReturnType<React.FC> => {
   const methods = useForm<T>({
     resolver: yupResolver(schema),
     mode: 'onBlur',
