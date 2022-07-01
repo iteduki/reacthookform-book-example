@@ -14,16 +14,16 @@ type UserNameFormValues = Yup.InferType<typeof yupObject>
 export const UserName: React.VFC = () => {
   return (
     <>
-      <div>お名前</div>
+      <h3>お名前</h3>
       <div>
         <label>姓</label>
+        <TextInput<UserNameFormValues> name="last_name" />
       </div>
-      <TextInput<UserNameFormValues> name="last_name" />
       <ErrorMessage<UserNameFormValues> name="last_name" />
       <div>
         <label>名</label>
+        <TextInput<UserNameFormValues> name="first_name" />
       </div>
-      <TextInput<UserNameFormValues> name="first_name" />
       <ErrorMessage<UserNameFormValues> name="first_name" />
     </>
   )

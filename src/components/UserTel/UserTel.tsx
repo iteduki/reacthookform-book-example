@@ -20,7 +20,7 @@ type UserTelFormValues = Yup.InferType<typeof yupObject>
 export const UserTel: React.VFC = () => {
   return (
     <>
-      <div>電話番号</div>
+      <h3>電話番号</h3>
       <TextInput<UserTelFormValues> name="customer.tel" placeholder="例：09012345678" />
       <ErrorMessage<UserTelFormValues> name="customer.tel" />
     </>
