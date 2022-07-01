@@ -13,7 +13,7 @@ export const ErrorMessage = <T extends FieldValues = never>({ name }: ErrorMessa
       errors={errors}
       name={name}
       render={({ message }) => {
-        return <p>{message}</p>
+        return <p style={{ color: 'red', fontWeight: 'bold' }}>{message}</p>
       }}
     />
   )
